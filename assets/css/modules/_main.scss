@@ -1,0 +1,135 @@
+body{
+    font-family: $regularFont;
+    font-size: $regularFontSize;
+    color: $regularFontColor;
+
+    a{
+        color: $regularFontColor;
+        &:hover{
+            color: $regularFontColor;
+        }
+    }
+}
+
+.main__container{
+    border-top: 4px solid $primaryColor;
+    .slider__container{
+        .slider-arrows{
+            opacity: 0;
+            transition-duration: 300ms;
+        }
+        &:hover{
+            .slider-arrows{
+                opacity: 1;
+            } 
+        }
+    }
+
+
+    .contents__container{
+        padding-bottom: 15px;
+        ul{
+            display: flex;
+            padding: 0px;
+            flex-wrap: wrap;
+            flex-direction: row;
+            li{ 
+                display: flex; 
+                width: calc(25% - 10px);  
+                justify-content: center;
+                flex-direction: column;
+                margin: 25px 5px;
+                a{
+                    figure{
+                        height: 150px;
+                        position: relative;
+                        background-image: url('../images/bnr.png');
+                        transition-duration: 400ms;
+                        &:hover{
+                            background-position-y: 100%;
+                            background-color: white;
+                            text-shadow: 3px 4px 7px gray;
+                        }
+                        figcaption{
+                            position: absolute;
+                            bottom: -31px;
+                        }
+                    }
+                }
+                &:nth-child(1){
+                    figure{
+                        background-position-x: 43%;
+                        background-color: #fa6800;
+                    }
+                }
+                &:nth-child(2){
+                    figure{
+                        background-position-x: 28%;
+                        background-color: #1ba1e2;
+                    }
+                }
+                &:nth-child(3){
+                    figure{
+                        background-position-x: 13.5%;
+                        background-color: #9f00c4
+                    }
+                }
+                &:nth-child(4){
+                    figure{
+                        background-position-x: -1%;
+                        background-color: #d80073;
+                    }
+                }
+                &:nth-child(5){
+                    figure{
+                        background-position-x: 101%;
+                        background-color: #b617d3;
+                    }
+                }
+                &:nth-child(6){
+                    figure{
+                        background-position-x: 86.5%;
+                        background-color: #4fc736;
+                    }
+                }
+                &:nth-child(7){
+                    figure{
+                        background-position-x: 72%;
+                        background-color: #fe9f09;
+                    }
+                }
+                &:nth-child(8){
+                    figure{
+                        background-position-x: 57.5%;
+                        background-color: #c40023;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .products__container{
+        background-color: #f1f1f1;
+
+        h2{
+            font-size: 18px;
+            border-bottom: 4px solid $primaryColor;
+            display: inline;
+            line-height: 60px;
+            padding-bottom: 8px;
+        }
+        hr{
+            margin-top: -4px;
+            margin-bottom: 20px;
+            border: 0;
+            border-top: 2px solid #cfcfcf;
+        }
+        p{
+            font-size: 11px;
+            font-family: Tahoma;
+            color: #6d6d6d;
+        }
+    }
+}
